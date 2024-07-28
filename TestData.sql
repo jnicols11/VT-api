@@ -1,0 +1,71 @@
+INSERT INTO public."Color" ("ColorID", "Name") VALUES (1, 'RED');
+INSERT INTO public."Color" ("ColorID", "Name") VALUES (2, 'BLUE');
+INSERT INTO public."Color" ("ColorID", "Name") VALUES (3, 'GREEN');
+INSERT INTO public."Color" ("ColorID", "Name") VALUES (4, 'YELLOW');
+INSERT INTO public."Color" ("ColorID", "Name") VALUES (5, 'ORANGE');
+INSERT INTO public."Color" ("ColorID", "Name") VALUES (6, 'PURPLE');
+INSERT INTO public."Color" ("ColorID", "Name") VALUES (7, 'BLACK');
+INSERT INTO public."Color" ("ColorID", "Name") VALUES (8, 'WHITE');
+INSERT INTO public."Color" ("ColorID", "Name") VALUES (9, 'GRAY');
+INSERT INTO public."Color" ("ColorID", "Name") VALUES (10, 'BROWN');
+
+INSERT INTO public."Tag" ("TagID", "Name") VALUES (1, 'Mens');
+INSERT INTO public."Tag" ("TagID", "Name") VALUES (2, 'Womens');
+INSERT INTO public."Tag" ("TagID", "Name") VALUES (3, 'Kids');
+INSERT INTO public."Tag" ("TagID", "Name") VALUES (4, 'Shirt');
+INSERT INTO public."Tag" ("TagID", "Name") VALUES (5, 'Pants');
+INSERT INTO public."Tag" ("TagID", "Name") VALUES (6, 'Shoes');
+INSERT INTO public."Tag" ("TagID", "Name") VALUES (7, 'Hoodie');
+INSERT INTO public."Tag" ("TagID", "Name") VALUES (8, 'Hat');
+INSERT INTO public."Tag" ("TagID", "Name") VALUES (9, 'Unisex');
+
+INSERT INTO public."Product" ("ProductID", "Name", "Description", "Price", "Quantity") VALUES (1, 'Mens T-Shirt', 'Amazing test product with lost of cool features.', 9.99, 10);
+INSERT INTO public."Product" ("ProductID", "Name", "Description", "Price", "Quantity") VALUES (2, 'Mens Pants', 'Amazing test product with lost of cool features.', 19.99, 10);
+INSERT INTO public."Product" ("ProductID", "Name", "Description", "Price", "Quantity") VALUES (3, 'Standard Hoodie', 'Amazing test product with lost of cool features.', 29.99, 10);	
+INSERT INTO public."Product" ("ProductID", "Name", "Description", "Price", "Quantity") VALUES (4, 'Womens T-Shirt', 'Amazing test product with lost of cool features.', 39.99, 10);
+INSERT INTO public."Product" ("ProductID", "Name", "Description", "Price", "Quantity") VALUES (5, 'Womens Pants', 'Amazing test product with lost of cool features.', 49.99, 10);
+INSERT INTO public."Product" ("ProductID", "Name", "Description", "Price", "Quantity") VALUES (6, 'Dad Hat', 'Amazing test product with lost of cool features.', 29.99, 10);
+INSERT INTO public."Product" ("ProductID", "Name", "Description", "Price", "Quantity") VALUES (7, 'Kids Shirt', 'Amazing test product with lost of cool features.', 19.99, 10);
+
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (1, 1, 1);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (2, 1, 2);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (3, 1, 3);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (4, 1, 4);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (5, 2, 5);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (6, 2, 6);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (7, 2, 7);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (8, 3, 8);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (9, 3, 9);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (10, 3, 10);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (11, 4, 1);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (12, 4, 2);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (13, 4, 3);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (14, 5, 4);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (15, 5, 5);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (16, 5, 6);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (17, 6, 7);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (18, 6, 8);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (19, 6, 9);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (20, 6, 10);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (21, 7, 1);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (22, 7, 2);
+INSERT INTO public."ProductColor" ("ProductColorID", "ProductID", "ColorID") VALUES (23, 7, 3);
+
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (1, 1, 1);
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (2, 1, 4);
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (3, 2, 1);
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (4, 2, 5);
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (5, 3, 7);
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (6, 3, 9);
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (7, 4, 2);
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (8, 4, 4);
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (9, 5, 2);
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (10, 5, 5);
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (11, 6, 8);
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (12, 6, 9);
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (13, 7, 3);
+INSERT INTO public."ProductTag" ("ProductTagID", "ProductID", "TagID") VALUES (14, 7, 4);
+
+INSERT INTO public."ProductImage" ("ProductImageID", "ProductID", "Image") VALUES (1, 1, 'This will be an image url');
+
+INSERT INTO public."User" ("UserID", "FirstName", "LastName", "Email") VALUES (1, 'Jordan', 'Nicols', 'nicolsj99@gmail.com');
