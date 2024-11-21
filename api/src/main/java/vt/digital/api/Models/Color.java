@@ -13,6 +13,10 @@ import lombok.*;
 @Builder
 public class Color {
 
+    public Color(Integer colorId2) {
+        //TODO Auto-generated constructor stub
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ColorID")
